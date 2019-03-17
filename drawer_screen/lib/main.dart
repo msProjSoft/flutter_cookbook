@@ -39,17 +39,19 @@ Widget _Drawer1(context) {
       padding: EdgeInsets.zero,
       children: <Widget>[
         DrawerHeader(
-          child: Text('Drawer Header'),
+          child: Text('Drawer Header'),     
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             image: DecorationImage(
-              fit: BoxFit.fill,
-              image: AssetImage('assets/img01.png'),
+              fit: BoxFit.fitWidth,
+              image: AssetImage('assets/images/img01.png'),
             ),
           ),
+
         ),
-        
+        Text('Ms Loooca'),        
         ListTile(
+          leading: Icon(Icons.train),
           title: Text('Item 1'),
           onTap: () {
             // Update the state of the app
@@ -59,12 +61,14 @@ Widget _Drawer1(context) {
           },
         ),
         ListTile(
+          leading: Icon(Icons.person),
           title: Text('Item 2'),
           onTap: () {
             Navigator.pop(context);
           },
         ),
         ListTile(
+          leading: Icon(Icons.book),
           title: Text('Item 3'),
           onTap: () {
             Navigator.pop(context);
