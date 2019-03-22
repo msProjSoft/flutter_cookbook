@@ -125,7 +125,7 @@ Widget _Drawer1(context) {
 
 void _showDialog(context) {
     showDialog(
-    //  context: context,
+    context: context,
     builder: (BuildContext context) {
       return AlertDialog(
         title: Text('afsafaf'),
